@@ -13,7 +13,12 @@ body{
     color:#fff;
     background: #000;
   }
-
+.menuBtn { 
+  display:none;
+  position: absolute;
+  top: 14px;
+  cursor: pointer;
+}
 
 .pur {
   padding: 10%;
