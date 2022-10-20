@@ -13,13 +13,13 @@ body{
     color:#fff;
     background: #000;
   }
-.menuBtn { 
+/* .menuBtn { 
   display:none;
   position: absolute;
   top: 14px;
   cursor: pointer;
 }
-
+ */
 .pur {
   padding: 10%;
   font-size: 17px;
