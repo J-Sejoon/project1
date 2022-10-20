@@ -1,0 +1,302 @@
+@charset "UTF-8";
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+a { 
+  color:inherit; 
+}
+li:after, #shop:after {
+  display:block;
+  content:'';
+  clear:both;
+}
+
+/* header */
+header { 
+  padding: 0 15px;
+}
+#header_in {
+  background: transparent;
+  width:100%; 
+  height:50px;
+  position: fixed;
+  z-index: 3;
+  transition: 0.3s;
+  color:#fff;
+}
+#header_in.scroll {
+  background:rgba(255,255,255,0.8);
+  color:#000;
+}
+h1 { 
+  float:left;
+  line-height:50px;
+  font-size: 24px;
+}
+
+nav{ 
+  position:absolute;
+  left:50%; 
+  margin-left:-200px;
+}
+nav ul { }
+nav li { 
+  float:left; 
+}
+nav a { 
+  display: block;
+  margin:0 20px;
+  font-size:12px;
+  line-height:50px;
+}
+
+.menuBtn { 
+  display:none;
+  position: absolute;
+  top: 14px;
+  cursor: pointer;
+}
+
+.sign { 
+  float:right;
+  line-height:50px;
+  font-size: 12px;
+}
+
+
+
+/* main visual */
+#main_visual { 
+  height:100%;
+  width: 100%;
+  background: #000;
+}
+
+#sub_visual{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  background: #000;
+}
+.sub_visual1{ 
+  width:50%;
+  height:540px;
+  background:#000000 ;
+}
+.sub_visual1 iframe{
+  width: 100%;
+  height: 540px;
+}
+.sub_visual2{
+  float: right;
+  height: 100%;
+  width: 50%;
+  text-align: center;
+}
+
+
+
+.slider {
+  width: 49.1vw;
+  height: 540px;
+  background-color: yellow;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  text-align: center;
+  overflow: hidden;
+}
+.image-container {
+  width: 300%;
+  background-color: pink;
+  height: 540px;
+  clear: both;
+  position: relative;
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s;
+  -o-transition: left 2s;
+  transition: left 2s;
+}
+.slide {
+  width: 49.1vw;
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+#slide-1:target ~ .image-container {
+  left: 0px;
+}
+#slide-2:target ~ .image-container {
+  left: -100%;
+}
+#slide-3:target ~ .image-container {
+  left: -200%;
+}
+.buttons {
+  position: relative;
+  top: -50px;
+}
+.buttons a {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  background-color: #999;
+  margin: 5px;
+}
+
+
+
+/* shop */
+#shop {
+  overflow: hidden;
+}
+#shop h2{
+  font-size: 32px;
+  line-height: 50px;
+  padding: 31px 0 21px 29px;
+}
+#shop .list{
+}
+#shop .list li {
+  float: left;
+  width:25%;
+  
+}
+.list li > a > span{
+  position: relative;
+  list-style: 24px;
+  font-weight: bold;
+}
+.list img{
+  width: 100%;
+  height: 100%;
+}
+
+.list img:hover{
+  transition: 0.8s;
+  transform: scale(1.1);
+}
+.list li:hover{
+  background-color: rgb(182, 255, 239);
+  transition: 0.8s;
+}
+
+
+.service_wrap {
+  margin-top: 100px;
+}
+.service { width:80%; margin:auto;}
+.service:after {
+  display:block; content:'';
+  clear:both;
+}
+.service .item { float:left; padding:0 8px;}
+
+.service_item1 { width:50%;}
+.service_right_wrap { 
+  display: flex; width:50%;
+  flex-wrap: wrap;
+}
+
+  .service_item2{ width:50%; }
+  .service_item3{ width:50%; }
+  .service_item4{ 
+    width: 100%;
+    margin:0;
+  }
+
+.service img{
+  width: 100%;
+}
+.service a p{
+  position: absolute;
+  z-index: 1;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 2%;
+}
+.service a span{
+  font-size: 18px;
+  font-weight: 500;
+  color: #666;
+}
+
+.service{
+  display: none;
+}
+
+
+
+/* concultation */
+#concultation{
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+.email, .call{
+  box-shadow: inset 0px 5px 10px 0 rgba(121, 121, 121, 0.08);
+  background: #f9f9f9;
+  border-radius: 30px;
+  height: 270px;
+  width: 40%;
+  margin: 20px;
+  position: relative;
+}
+#concultation h2{
+  margin: 4% 4% 2%;
+}
+#concultation p{
+  margin: 0 4%;
+  font-size: 15px;
+  line-height: 1.7;
+}
+#concultation .conc{ 
+  display: block;
+  right: 10%;
+  border-radius: 20px;
+  width: 200px;
+  padding: 10px 30px;
+  bottom: 10%;
+  position: absolute;
+  background: red;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+
+/* footer */
+footer { 
+  background:#aaa;
+}
+.footer_in{
+  width:1200px; 
+  margin: auto;
+  font-size: 12px;
+  padding-top: 5px;
+  display: flex;
+}
+.footer_in h3{
+  float: left;
+  font-size: 20px;
+  margin: 10px 20px;
+}
+.footer_in a{
+  float: right;
+}
+.footer_in a::after{
+  content: "|";
+  margin: 0 5px;
+}
+.footer_in a:last-of-type::after{
+  display:none;
+}
+.footer_in address{
+  font-size: 11px;
+  max-width: 720px;
+  color: #666;
+  padding: 5px 0;
+  margin-right: 80px;
+}
