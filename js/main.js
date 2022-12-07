@@ -63,3 +63,7 @@ $(window).resize(function(){
       $('nav').removeAttr('style');
   }
 });
+
+$('a').click(function(e) {
+  e.preventDefault();
+});
